@@ -1,0 +1,6 @@
+ADD ( x1 y1 ) (MINUS x1 (MINUS 0 y1))
+POS ( x1 ) (IF x1 1)
+NEG ( x1 ) (IF (MINUS 0 x1) 1)
+IF/THEN/ELSE ( x1 y1 z1 ) (ADD (IF x1 y1) (IF (MINUS 1 x1) z1))
+TIMES ( x1 y1 ) (IF/THEN/ELSE x1 (ADD y1 (TIMES (MINUS x 1) y)) 0)
+EQUAL ( x1 y1 ) (MINUS (MINUS 1 (IF (MINUS x1 y1) 1)) (IF (MINUS y1 x1) 1))

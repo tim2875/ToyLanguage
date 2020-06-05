@@ -1,0 +1,2 @@
+(MINUS (MINUS 5 2) (IF 2 3))
+(MINUS (IF -3 5) (IF 2 (MINUS 5 4)))
